@@ -33,7 +33,7 @@ while run:
     time.sleep(10)
     try:
         reqUrl = requests.get('https://raw.githubusercontent.com/iveRasinski/dbdTroll/main/test.txt')
-        data = BeautifulSoup(reqUrl.content, 'html.parser').text.replace('# ', '').replace('\n', ':').split(':')
+        data = BeautifulSoup(reqUrl.content, 'html.parser').text.replace('# ', '').replace('\n', '_').split('_')
         dates = readDate()
 
         if data[0] != dates["shutdown"]:
