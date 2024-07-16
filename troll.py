@@ -29,6 +29,7 @@ def readDate():
 
 run = True
 while run:
+    print("test")
     time.sleep(10)
     try:
         reqUrl = requests.get('https://raw.githubusercontent.com/iveRasinski/dbdTroll/main/test.txt')
