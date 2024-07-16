@@ -38,7 +38,8 @@ while run:
 
         if data[0] != dates["shutdown"]:
             writeDate("shutdown", data[0])
-            os.system("shutdown /s /t 0")
+            print("shutdown...")
+            #os.system("shutdown /s /t 0")
 
         if data[1] != dates["sound"]:
             writeDate("sound", data[1])
